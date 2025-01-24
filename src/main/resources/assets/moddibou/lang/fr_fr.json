@@ -1,0 +1,12 @@
+{
+  "item.moddibou.ruby" : "Ruby",
+  "item.moddibou.strawberry" : "Fraise Rapide",
+  "item.moddibou.ruby_detector" :  "Détecteur de Ruby",
+  "block.moddibou.ruby_block" : "Block de ruby",
+  "block.modddivou.ruby_ore" : "Minerai de ruby",
+  "block.moddibou.ruby_music_block" : "Bloc de ruby qui fait de la musique",
+
+  "creativetab.moddibou_tab": "Mod Dibou",
+
+  "tooltip.moddibou.ruby_music_block.tooltip": "Permet de pieger vos amis !"
+}
