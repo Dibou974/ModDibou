@@ -1,9 +1,11 @@
 package fr.dibou.moddibou.item.custom;
 
 import fr.dibou.moddibou.block.ModBlocks;
+import fr.dibou.moddibou.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.context.UseOnContext;
@@ -37,6 +39,7 @@ public class RubyDetector extends Item {
             }
         }
 
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), EquipmentSlot.MAINHAND);
         return InteractionResult.SUCCESS;
     }
 
@@ -46,7 +49,8 @@ public class RubyDetector extends Item {
     }
 
     private boolean isValuableBlock(BlockState state) {
-        return state.is(ModBlocks.RUBY_ORE.get());
+
+        return state.is(ModTags.Blocks.RUBY_DETECTOR_VALUABLES);
     }
 
 
