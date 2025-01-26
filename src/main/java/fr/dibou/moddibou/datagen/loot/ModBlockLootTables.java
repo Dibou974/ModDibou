@@ -19,9 +19,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
 
-public class ModBlockLootTables extends BlockLootSubProvider{
-
-    protected ModBlockLootTables() {
+public class ModBlockLootTables extends BlockLootSubProvider {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
@@ -29,17 +28,13 @@ public class ModBlockLootTables extends BlockLootSubProvider{
     protected void generate() {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
 
-        this.add(ModBlocks.RUBY_ORE.get(),
-            block -> createCoppeLikerOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
+        this.add(ModBlocks.RUBY_ORE.get(), block -> createLikeCopperOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
     }
 
-    protected LootTable.Builder createCoppeLikerOreDrops(Block pBlock, Item item) {
-        return createSilkTouchDispatchTable(pBlock,
-                (LootPoolEntryContainer.Builder)
-                        this.applyExplosionDecay(pBlock,
-                                LootItem.lootTableItem(item)
-                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
-                                        .apply(ApplyBonusCount.addOreBonusCount(Enchantments.FORTUNE))));
+    protected LootTable.Builder createLikeCopperOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock, (LootPoolEntryContainer.Builder)this
+                .applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F))).apply(ApplyBonusCount.addOreBonusCount(Enchantments.FORTUNE))));
     }
 
     @Override

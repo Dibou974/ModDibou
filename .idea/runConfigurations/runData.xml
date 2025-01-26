@@ -3,9 +3,9 @@
   <configuration default="false" factoryName="Application" name="runData" singleton="false" type="Application">
     <option name="MAIN_CLASS_NAME" value="net.minecraftforge.bootstrap.ForgeBootstrap"/>
     <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=REGISTRIES -Djava.net.preferIPv6Addresses=system"/>
-    <option name="PROGRAM_PARAMETERS" value="--launchTarget forge_userdev_data --assetIndex 16 --assetsDir C:\Users\dibou\.gradle\caches\forge_gradle\assets --gameDir . --mod moddibou --all --output &quot;E:\OneDrive\Code\Mods Minecraft\1.20.6\forge-1.20.6-50.1.0-mdk\src\generated\resources&quot; --existing &quot;E:\OneDrive\Code\Mods Minecraft\1.20.6\forge-1.20.6-50.1.0-mdk\src\main\resources&quot;"/>
+    <option name="PROGRAM_PARAMETERS" value="--launchTarget forge_userdev_data --assetIndex 16 --assetsDir C:\Users\dibou\.gradle\caches\forge_gradle\assets --gameDir . --mod moddibou --all --output &quot;C:\Users\dibou\OneDrive\Code\Mods Minecraft\1.20.6\ModDibou\src\generated\resources&quot; --existing &quot;C:\Users\dibou\OneDrive\Code\Mods Minecraft\1.20.6\ModDibou\src\main\resources&quot;"/>
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$\run-data"/>
-    <module name="forge-1.20.6-50.1.0-mdk.main"/>
+    <module name="ModDibou.main"/>
     <envs>
       <env name="MOD_CLASSES" value="$PROJECT_DIR$\build\sourcesSets\main"/>
       <env name="MCP_MAPPINGS" value="parchment_2024.06.16-1.20.6"/>

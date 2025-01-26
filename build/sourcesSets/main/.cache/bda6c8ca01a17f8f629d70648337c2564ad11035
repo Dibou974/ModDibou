@@ -1,0 +1,4 @@
+// 1.20.6	2025-01-26T00:00:53.5153402	Tags for minecraft:block mod id moddibou
+e20901f66949c89168346739cea83a633830b504 data/minecraft/tags/blocks/mineable/pickaxe.json
+c6c28d9830bd057fe1ed5794b162eb0a348c043d data/minecraft/tags/blocks/needs_iron_tool.json
+c6c28d9830bd057fe1ed5794b162eb0a348c043d data/moddibou/tags/blocks/ruby_detector_valuables.json

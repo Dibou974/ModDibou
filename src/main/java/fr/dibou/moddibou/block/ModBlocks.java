@@ -25,7 +25,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () -> new DropExperienceBlock(UniformInt.of(2, 6), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(2f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> RUBY_MUSIC_BLOCK = registerBlock("ruby_music_block", () -> new RubyMusicBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT)));
+    public static final RegistryObject<Block> RUBY_MUSIC_BLOCK = registerBlock("ruby_music_block", () -> new RubyMusicBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT).noLootTable()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
