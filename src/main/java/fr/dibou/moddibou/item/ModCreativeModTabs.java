@@ -26,6 +26,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                 pOutput.accept(ModBlocks.RUBY_ORE.get());
                 pOutput.accept(ModBlocks.RUBY_MUSIC_BLOCK.get());
+                pOutput.accept(ModBlocks.RUBY_STAIR.get());
             })
             .build());
 

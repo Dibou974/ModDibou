@@ -1,10 +1,14 @@
-// 1.20.6	2025-01-26T00:00:53.5173404	Block States: moddibou
+// 1.20.6	2025-01-30T09:07:01.2316958	Block States: moddibou
 a1cd05dda77b475386b932213080465bfe5c3855 assets/moddibou/blockstates/ruby_block.json
 4cf4b3d43b3f18aaa2bc928dcd70d7893492ab8a assets/moddibou/blockstates/ruby_music_block.json
 9c1924a8cb22cc26fa2c657bb4d5cbdcd6344112 assets/moddibou/blockstates/ruby_ore.json
+74afa6ba638d51e33a098b00ce396b56e999657d assets/moddibou/blockstates/ruby_stair.json
 054931e8d4627a5e19bd1353f56d2e8993e97148 assets/moddibou/models/block/ruby_block.json
 70b26d179ba1daadd42644dfea4344dc94c3befb assets/moddibou/models/block/ruby_music_block.json
 282c1572325c3bbc2c744d2f759251e448a89290 assets/moddibou/models/block/ruby_ore.json
+970b374f214fd47b2e11e1939af758a558c1506a assets/moddibou/models/block/ruby_stair.json
+0b134c41212fb1c99d0fade62b68d0485cee3b1d assets/moddibou/models/block/ruby_stair_inner.json
+ed759ea9f4d38e434369b08824806f56183bb70f assets/moddibou/models/block/ruby_stair_outer.json
 f90b70480c54af26805fbad4fc6fa29f5ee4369e assets/moddibou/models/item/ruby_block.json
 91e7d38843d9698b958d3077a45c9053ee2502fc assets/moddibou/models/item/ruby_music_block.json
 dca50b7c34c0b4165c36861f8f2cd24b6b647c35 assets/moddibou/models/item/ruby_ore.json

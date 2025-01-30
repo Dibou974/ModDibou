@@ -6,10 +6,7 @@ import fr.dibou.moddibou.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -26,6 +23,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore", () -> new DropExperienceBlock(UniformInt.of(2, 6), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(2f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> RUBY_MUSIC_BLOCK = registerBlock("ruby_music_block", () -> new RubyMusicBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT).noLootTable()));
+
+    public static final RegistryObject<Block> RUBY_STAIR = registerBlock("ruby_stair", () -> new StairBlock(ModBlocks.RUBY_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).sound(SoundType.AMETHYST)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

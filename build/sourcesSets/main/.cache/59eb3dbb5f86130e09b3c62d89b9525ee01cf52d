@@ -1,3 +1,4 @@
-// 1.20.6	2025-01-26T00:00:53.5173404	Loot Tables
+// 1.20.6	2025-01-30T09:07:01.2285654	Loot Tables
 037da25ceee5f329d43e0e81e4896dd09a08db6a data/moddibou/loot_tables/blocks/ruby_block.json
 446feb9db0be92ee659ba96a4082e9c33cc89fd5 data/moddibou/loot_tables/blocks/ruby_ore.json
+557779dcc643b1bfc653f2ae44d5851374503cd8 data/moddibou/loot_tables/blocks/ruby_stair.json

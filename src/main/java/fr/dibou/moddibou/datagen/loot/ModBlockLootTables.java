@@ -27,6 +27,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.RUBY_STAIR.get());
 
         this.add(ModBlocks.RUBY_ORE.get(), block -> createLikeCopperOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get()));
     }
