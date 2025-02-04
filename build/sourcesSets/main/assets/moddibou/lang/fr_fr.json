@@ -10,5 +10,7 @@
 
   "creativetab.moddibou_tab": "Mod Dibou",
 
-  "tooltip.moddibou.ruby_music_block.tooltip": "Permet de pieger vos amis !"
+  "tooltip.moddibou.ruby_music_block.tooltip": "Permet de pieger vos amis !",
+
+  "item.moddibou.ruby_sword" : "Epee en Ruby",
 }

@@ -13,6 +13,8 @@ public class ModTags {
     public static class Blocks {
 
         public static final TagKey<Block> RUBY_DETECTOR_VALUABLES  = tag("ruby_detector_valuables");
+        public static final TagKey<Block> NEEDS_RUBY_TOOL  = tag("needs_ruby_tool");
+
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ModDibou.MODID, name));

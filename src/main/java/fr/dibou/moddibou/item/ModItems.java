@@ -3,7 +3,9 @@ package fr.dibou.moddibou.item;
 import fr.dibou.moddibou.ModDibou;
 import fr.dibou.moddibou.item.custom.RubyDetector;
 import fr.dibou.moddibou.item.custom.WoodMagicStick;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +22,8 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry", () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
     public static final RegistryObject<Item> WOOD_MAGIC_STICK = ITEMS.register("wood_magic_stick", () -> new WoodMagicStick(new Item.Properties().durability(500).stacksTo(1)));
+
+    public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(ModToolTiers.RUBY, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.RUBY, 15, 1))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

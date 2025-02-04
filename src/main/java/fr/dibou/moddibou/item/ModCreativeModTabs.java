@@ -24,6 +24,8 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.RUBY_DETECTOR.get());
                 pOutput.accept(ModItems.WOOD_MAGIC_STICK.get());
 
+                pOutput.accept(ModItems.RUBY_SWORD.get());
+
                 pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                 pOutput.accept(ModBlocks.RUBY_ORE.get());
                 pOutput.accept(ModBlocks.RUBY_MUSIC_BLOCK.get());
