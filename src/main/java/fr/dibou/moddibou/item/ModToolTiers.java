@@ -10,5 +10,5 @@ import net.minecraftforge.common.ForgeTier;
 import java.util.function.Supplier;
 
 public class ModToolTiers {
-    public static final Tier RUBY = new ForgeTier(2000, 9f, 5f, 22, ModTags.Blocks.NEEDS_RUBY_TOOL, () -> Ingredient.of(ModItems.RUBY.get()), BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
+    public static final Tier RUBY = new ForgeTier(2000, 40f, 5f, 22, ModTags.Blocks.NEEDS_RUBY_TOOL, () -> Ingredient.of(ModItems.RUBY.get()), BlockTags.INCORRECT_FOR_NETHERITE_TOOL);
 }
