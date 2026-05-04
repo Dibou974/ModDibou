@@ -1,46 +1,77 @@
+<div align="center">
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+# ⚒️ ModDibou
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+**A Minecraft Forge mod built to learn Java — custom tools, ores, weapons & special mechanics.**
 
-Setup Process:
-==============================
+![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+![Minecraft Forge](https://img.shields.io/badge/Minecraft_Forge-1.20.x-8B4513?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Experimental-orange?style=flat-square)
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+</div>
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+---
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
+## Overview
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
+ModDibou is a personal Minecraft Forge mod I built as a way to **learn Java hands-on** — by doing something concrete rather than following tutorials.
 
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
+The mod introduces custom content into the game: new ores to mine, new tools to craft, and weapons with special abilities. It was never meant to be a polished release — it's an exploration and a proof of concept.
 
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/latest/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+---
+
+## What's in the mod
+
+- ⛏️ **Custom tools** — new tool set crafted from custom materials
+- 🪨 **Custom ores** — new ore types generating in the world
+- ⚔️ **Custom weapons** — with special abilities and effects
+- 🔧 Built entirely with **Minecraft Forge** and the **Java** modding API
+
+---
+
+## Why this project
+
+This was my entry point into **Java development**. Rather than writing Hello World programs, I chose to mod Minecraft — a complex Java codebase — to understand how object-oriented programming works in practice: inheritance, registries, event systems, and data-driven configuration.
+
+---
+
+## Tech Stack
+
+| Technology | Role |
+|---|---|
+| **Java** | Core modding language |
+| **Minecraft Forge 1.20.x** | Modding framework & API |
+| **Gradle** | Build system |
+| **IntelliJ IDEA** | Development environment |
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Java `>= 17`
+- Minecraft Java Edition `1.20.x`
+- Minecraft Forge for `1.20.x`
+
+### Build from source
+
+```bash
+# Clone the repository
+git clone https://github.com/Dibou974/ModDibou.git
+
+# Navigate to the project
+cd ModDibou
+
+# Build the mod
+./gradlew build
+```
+
+The compiled `.jar` will be in `build/libs/`. Drop it into your Minecraft `mods/` folder and launch with Forge.
+
+---
+
+## Author
+
+**Adilson Camalon** — [@Dibou974](https://github.com/Dibou974)  
+📧 [adilsoncamalon@gmail.com](mailto:adilsoncamalon@gmail.com)
